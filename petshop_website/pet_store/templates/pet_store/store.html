@@ -1,0 +1,30 @@
+{% extends 'pet_store/base.html' %}
+
+
+{% block content %}
+<!--Product List-->
+<div class="row row-cols-2 row-cols-md-5 g-4">
+    <div class="col test">categorias</div>
+    <div class="col w-75 d-flex">
+        <div class="row row-cols-2 row-cols-md-4 g-5">
+            {% for product in products %}
+            <div class="col">
+                    <div class="card products" style="height: 20rem; width: 12rem;">
+                        <a class="products-link" href="#">
+                            <img src="{{ product.images.url }}" class="card-img-top w-100 h-50 test" alt="icone do projeto">
+                            <div class="card-body">
+                                <h5 class="card-title"> {{ product.name }}</h5>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted text-end" style="font-size: 0.8rem;">Criado em: {{ product.created_at }}</small>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

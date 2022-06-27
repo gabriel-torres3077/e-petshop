@@ -1,0 +1,20 @@
+#search-product{
+    width: 500px;
+}
+/* debug mode
+* { outline: solid 0.25rem hsla(210, 100%, 100%, 0.5);
+*/
+}
+.test{
+    background-color: rgba(224, 139, 213, 0.4);
+}
+body{
+    padding-top: 70px;
+}
+.products-link, a:link{
+    text-decoration: none;
+    color: black;
+}
+.products{
+    border: 3px solid #1890ff;
+}
