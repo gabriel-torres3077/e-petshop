@@ -1,2 +1,4 @@
 # e-pet
- projeto de site para petshop
+ (Under development)
+ Petshop website to buy products, adopt, and hire services
+
